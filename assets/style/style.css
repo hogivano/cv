@@ -1,0 +1,315 @@
+@font-face {
+    font-family: arimo;
+    src: url(../font/Arimo-Regular.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: opensans-semibold;
+    src: url(../font/OpenSans-SemiBold.ttf);
+}
+
+.font-arimo {
+    font-family: arimo;
+}
+
+.font-opensans {
+    font-family: opensans;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: opensans;
+    color: #222;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
+
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.font-opensans-semibold {
+    font-family: opensans-semibold;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6 {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    width: 100%;
+    max-width: 50%;
+    align-self: center;
+}
+
+.col-lg-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    width: 100%;
+    max-width: 33.33%;
+    align-self: center;
+}
+
+.box-1 {
+    flex-grow: 1;
+}
+
+.card {
+    -webkit-box-shadow: 17px 21px 33px -15px rgba(0,0,0,0.31);
+    -moz-box-shadow: 17px 21px 33px -15px rgba(0,0,0,0.31);
+    box-shadow: 17px 21px 33px -15px rgba(0,0,0,0.31);
+    background-color: #222;
+    border-radius: 15px;
+}
+
+.card * {
+    color: #e2e2e2 !important;
+}
+
+.card-header {
+    padding: 5px 15px;
+}
+
+.card-body {
+    padding: 10px 15px;
+}
+
+section {
+    min-height: 90vh;
+}
+
+
+/* toggle style css */
+
+.toggle-style {
+    position: fixed; 
+    bottom: 5%; 
+    right: 3%; 
+    display: flex;
+}
+
+.toggle-style .status {
+    font-size: 15px;
+    align-self: center;
+    margin: 0 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #222;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 10px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #e2e2e2;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #e2e2e2;
+}
+
+input:checked + .slider:before {
+    background-color: #222;
+}
+
+input:focus + .slider:before {
+    box-shadow: 0 0 1px #222;
+}
+
+input:checked + .dark {
+    font-weight: bold;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* header nav */
+
+header {
+    position: absolute; 
+    top: 0; 
+    right: 0;
+}
+
+header nav{
+    width: 100%;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 7px;
+    font-size: 1em;
+    color: #222;
+    font-weight: 400;
+    font-family: arimo;
+}
+
+header nav ul li.active {
+    padding-bottom: 3px;
+    color: #6987d1 !important;
+    border-bottom: 1px solid #6987d1;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    color: #6987d1 !important;
+}
+
+/* profile section */
+
+#section-profile {
+    width: 100%;
+}
+
+#section-profile .about-me {
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+.image-profile {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.sosmed a {
+    text-decoration: none;
+}
+
+
+/* footer section */
+
+.copyright {
+    background-color: #222;
+    color: #e2e2e2;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: opensans;
+    font-size: 12px;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.bg-dark {
+    background-color: #222!important;
+}
+
+body.bg-dark, body.bg-dark div, body.bg-dark h1, body.bg-dark h2, 
+body.bg-dark h3, body.bg-dark h4, body.bg-dark h5, 
+body.bg-dark h6, body.bg-dark b, body.bg-dark small, body.bg-dark i,
+body.bg-dark li, body.bg-dark span, body.bg-dark p, body.bg-dark .toggle-style .status {
+    color: #e2e2e2!important;
+}
+
+body.bg-dark .copyright {
+    background-color: white !important;
+    color: #222 !important;
+}
+
+body.bg-dark .copyright * {
+    color: #222 !important;
+}
+
+body.bg-dark .card {
+    background-color: white !important;
+}
+
+body.bg-dark .card * {
+    color: #222 !important;
+}
