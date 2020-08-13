@@ -15,11 +15,33 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #section-service, #section-portofolio {
+        padding: 3em 0;
+    }
+
+    header nav li {
+        color: #e2e2e2 !important;
+    }
+
     .container {
         width: 100%;
     }
 
     .image-profile {
         width: 100%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    #section-service .col-sm-12 {
+        margin-top: 1.5em;
+    }
+
+    .about-me {
+        margin-top: 1.2em;
     }
 }

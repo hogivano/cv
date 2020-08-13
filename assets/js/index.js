@@ -14,7 +14,28 @@ document.addEventListener("DOMContentLoaded", function(e) {
         }
         console.log("clicked")
         console.log(this.checked)
-    });
+    })
+
+
+    document.getElementById("portofolio").addEventListener("click", function (e){
+        var section = document.getElementById("section-portofolio")
+
+        var y = section.getBoundingClientRect().top + window.scrollY
+        window.scroll({
+            top: y,
+            behavior: 'smooth'
+        })
+    })
+
+    document.getElementById("i-do").addEventListener("click", function (e){
+        var section = document.getElementById("section-service")
+
+        var y = section.getBoundingClientRect().top + window.scrollY
+        window.scroll({
+            top: y,
+            behavior: 'smooth'
+        })
+    })
 });
 
 function addBgDark (){

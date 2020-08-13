@@ -23,19 +23,18 @@
         <nav>
             <ul>
                 <li class="active">Profil</li>
-                <li>Service</li>
-                <li>Portofolio</li>
-                <li>Experience</li>
+                <li id="i-do">What I Do</li>
+                <li id="portofolio">Portofolio</li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="section-profile">
             <div class="row">
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-6 col-sm-12 p-0">
                     <img src="./assets/img/profile.jpg" class="image-profile" alt="">
                 </div>
-                <aside class="col-lg-6 about-me">
+                <aside class="col-lg-6 col-sm-12 about-me">
                     <h2 class="font-arimo">
                         <b>Hendriyan Ogivano</b>
                     </h2>
@@ -44,6 +43,9 @@
                         clever, kind and friendly. I can work together and trusted.
                     </p>
                     <div class="sosmed my-1">
+                        <a href="mailto:hogivano@gmail.com" target="_blank">
+                            <img src="https://img.icons8.com/fluent/48/000000/gmail.png" alt="email" title="email"/>
+                        </a>
                         <a href="https://www.instagram.com/hogivano/" target="_blank">
                             <img src="./assets/img/icon/instagram.svg" alt="instagram" title="instagram">
                         </a>
@@ -63,30 +65,53 @@
         <section id="section-service">
             <div class="container">
                 <h1>
-                    <b>My Services</b>
+                    <b>What I Do</b>
                 </h1>
                 <div class="row my-2">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-12">
                         <article class="card">
-                            <img src="" alt="">
+                            <div class="image-service">
+                                <a href='https://www.freepik.com/vectors/technology' target="_blank">
+                                    <img src="./assets/img/website.png" class="w-100" alt="website image">
+                                </a>
+                            </div>
+                            <h2 class="text-center font-arimo">
+                                <b>Make a Web App</b>
+                            </h2>
                             <div class="card-body description font-opensans font-12">
-                                Make a Website
+                                <p>
+                                    Building a website using PHP language and the javascript framework (Vue, React)
+                                </p>
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-12">
                         <article class="card">
-                            <img src="" alt="">
+                            <div class="image-service">
+                                <a href='https://www.freepik.com/vectors/technology' target="_blank">
+                                    <img src="./assets/img/mobile.png" class="w-100" alt="mobile image">
+                                </a>
+                            </div>
+                            <h2 class="text-center font-arimo">
+                                <b>Make a Mobile App</b>
+                            </h2>
                             <div class="card-body description font-opensans font-12">
-                                Make a Mobile Apps
+                                <p>Build applications using native (Java, Kotlin) and cross platform (Flutter) languages</p>
                             </div>
                         </article>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-12">
                         <article class="card">
-                            <img src="" alt="">
+                            <div class="image-service">
+                                <a href='https://www.freepik.com/vectors/infographic' target="_blank">
+                                    <img src="./assets/img/new-learn.png" class="w-100" alt="new learn image">
+                                </a>
+                            </div>
+                            <h2 class="text-center font-arimo">
+                                <b>Spirit Learning</b>
+                            </h2>
                             <div class="card-body description font-opensans font-12">
-                                Custom another technology?
+                                <p>Learn about new things in the world of technology</p>
                             </div>
                         </article>
                     </div>
@@ -98,13 +123,164 @@
                 <h1>
                     <b>My Portofolio</b>
                 </h1>
-            </div>
-        </section>
-        <section id="section-experience">
-            <div class="container">
-                <h1>
-                    <b>My Experience</b>
-                </h1>
+                <div class="row my-2">
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://coba.maos.tech/" title="jamkrindo link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/els jamkrindo.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Learning Management System at PT.Jamkrindo</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://gitapramawisesachoir.com/" title="gitapramawisesa link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/gitapramawisesa.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Profile UMKM Universitas Surabaya</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="http://sibutik.sidoarjokab.go.id/" title="sibutik link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/sibutik.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Sibutik Dinas Kesehatan Sidoarjo</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://jatimnet.com/" title="jatimnet link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/jatimnet.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>News Media Portal in East Java </b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://eventyogyakarta.net/" title="eventyogyakartalink" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/eventyogyakarta.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Event Management System at Eventyogyakarta</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://dbshop.hogivano.web.id/" title="jatimnet link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/dbshop.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Warehouse Management System at Kudabcmof</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://ahp.hogivano.web.id/" title="jatimnet link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/ahp\ web.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Analytical Hierarchy Process (AHP) System</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://stem.hogivano.web.id/" title="stemming text link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/stemming.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Stemming Text System</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://hogivano.github.io/ycp-test/" title="react link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/simple\ react.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Simple React App</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://play.google.com/store/apps/details?id=com.ulul.medbuddies" title="med buddies link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/med\ buddies.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Med Buddies</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://play.google.com/store/apps/details?id=com.trydev.cbr" title="injantung link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/injantung.PNG');">
+                                <div class="title">
+                                    <h3>
+                                        <b>Injantung</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 item">
+                        <a href="https://github.com/hogivano/kk_helper" title="kk helper link" target="_blank">
+                            <article class="image-portofolio" style="background-image: url('./assets/img/portofolio/kk\ helper.png');">
+                                <div class="title">
+                                    <h3>
+                                        <b>KK Helper</b>
+                                    </h3>
+                                </div>
+                                <div class="layer">
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
